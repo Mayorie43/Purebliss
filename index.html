@@ -25,27 +25,43 @@
 
   <!-- Header -->
   <header data-aos="fade-down">
-    <div class="logo-area">
-      <!-- <img src="images/kkl.jpg" alt="Purebliss Logo" class="logo-img" /> -->
-      <span class="logo-text">Purebliss</span>
-    </div>
+  <div class="logo-area">
+    <!-- <img src="images/kkl.jpg" alt="Purebliss Logo" class="logo-img" /> -->
+    <span class="logo-text">Purebliss</span>
+  </div>
 
-    <nav>
-      <a href="#Home">Home</a>
-      <a href="#Shop">Shop</a>
-      <a href="#Collections">Collections</a>
-      <a href="#Contact">Contact</a>
-    </nav>
+  <nav>
+    <a href="#Home">Home</a>
+    <a href="#Shop">Shop</a>
+    <a href="#Collections">Collections</a>
+    <a href="#Contact">Contact</a>
+  </nav>
 
-    <div class="icons">
-      <i class="fas fa-search"></i>
-      <i class="fas fa-user"></i>
-      <div class="cart-icon">
-        <i class="fas fa-shopping-cart"></i>
-        <span class="cart-badge">2</span>
-      </div>
+  <div class="icons">
+    <i class="fas fa-search"></i>
+    <i class="fas fa-user"></i>
+    <div class="cart-icon">
+      <i class="fas fa-shopping-cart"></i>
+      <span class="cart-badge">2</span>
     </div>
-  </header>
+  </div>
+
+  <!-- 🔽 Hamburger menu icon for mobile -->
+  <div class="menu-toggle" id="menu-toggle">
+    <i class="fas fa-bars"></i>
+  </div>
+
+  <!-- 🔽 Dropdown for mobile view icons -->
+  <div class="mobile-dropdown" id="mobile-dropdown" data-aos="fade-down">
+    <i class="fas fa-search"></i>
+    <i class="fas fa-user"></i>
+    <div class="cart-icon">
+      <i class="fas fa-shopping-cart"></i>
+      <span class="cart-badge">2</span>
+    </div>
+  </div>
+</header>
+
 
   <!-- Hero Section -->
  <section class="hero">
@@ -324,6 +340,21 @@
     once: false
   });
 </script>
+
+
+
+<script>
+  const menuToggle = document.getElementById("menu-toggle");
+  const mobileDropdown = document.getElementById("mobile-dropdown");
+
+  menuToggle.addEventListener("click", () => {
+    mobileDropdown.classList.toggle("show");
+    const icon = menuToggle.querySelector("i");
+    icon.classList.toggle("fa-bars");
+    icon.classList.toggle("fa-xmark");
+  });
+</script>
+
 
 
 </body>
