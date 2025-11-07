@@ -278,9 +278,27 @@ header.sticky {
 .hero-img img {
   width: 450px;
   border-radius: 16px;
-  
   box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  animation: smoothMove 5s ease-in-out infinite; /* move every 5s */
 }
+
+/* Soft floating animation */
+@keyframes smoothMove {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-img img {
+    width: 300px;
+  }
+}
+
 
 /* Why Choose Us */
 .why {
