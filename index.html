@@ -52,6 +52,7 @@
       <a href="#Shop" class="btn primary-btn">Shop Now</a>
       <a href="#LearnMore" class="btn secondary-btn">Learn More</a>
     </div>
+    
       <div class="stats">
   <div>
     <h3 class="count" data-target="10000">10K+</h3>
@@ -260,5 +261,49 @@
       offset: 100,
     });
   </script>
+
+
+
+<script>
+  const counters = document.querySelectorAll('.count');
+  let started = false;
+
+  function countUp() {
+    counters.forEach(counter => {
+      const target = +counter.getAttribute('data-target');
+      let count = 0;
+      const duration = 2000; // total animation time (2s)
+      const stepTime = 20;   // update every 20ms
+      const increment = target / (duration / stepTime);
+
+      const updateCount = () => {
+        count += increment;
+        if (count < target) {
+          counter.innerText = Math.floor(count);
+          setTimeout(updateCount, stepTime);
+        } else {
+          // Format numbers and add symbols
+          if (target === 10000) counter.innerText = "10K+";
+          else if (target === 500) counter.innerText = "500+";
+          else if (target === 100) counter.innerText = "100%";
+        }
+      };
+      updateCount();
+    });
+  }
+
+  // Trigger when visible
+  window.addEventListener('scroll', () => {
+    const statsSection = document.querySelector('.stats');
+    const statsPosition = statsSection.getBoundingClientRect().top;
+    const screenPosition = window.innerHeight / 1.2;
+
+    if (statsPosition < screenPosition && !started) {
+      countUp();
+      started = true;
+    }
+  });
+</script>
+
 </body>
 </html>
