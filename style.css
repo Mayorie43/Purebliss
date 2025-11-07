@@ -702,3 +702,290 @@ footer {
   -webkit-text-fill-color: transparent;
   text-shadow: 0 2px 4px rgba(0,0,0,0.3);
 }
+
+
+/* Default Desktop View */
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.mobile-dropdown {
+  display: none;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+  nav {
+    display: none;
+  }
+
+  .icons {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .mobile-dropdown {
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: 15px;
+    background: linear-gradient(135deg, #00c4ff, #0061ff);
+    border-radius: 10px;
+    padding: 12px 18px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    transition: all 0.3s ease;
+  }
+
+  .mobile-dropdown i {
+    font-size: 1.4rem;
+    color: #fff;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+
+  .mobile-dropdown i:hover {
+    transform: scale(1.15);
+  }
+
+  .mobile-dropdown.show {
+    display: flex;
+    animation: fadeSlideIn 0.3s ease forwards;
+  }
+
+  @keyframes fadeSlideIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+
+
+
+
+
+
+
+/* =========================================
+   🌍 MOBILE RESPONSIVE DESIGN
+   ========================================= */
+
+@media (max-width: 768px) {
+
+  /* ----- GENERAL ----- */
+  body {
+    overflow-x: hidden;
+  }
+
+  section {
+    padding: 40px 5%;
+  }
+
+  h1, h2, h3 {
+    line-height: 1.2;
+  }
+
+  /* ----- HEADER ----- */
+  header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 15px 0;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  nav a {
+    font-size: 1rem;
+  }
+
+  .icons {
+    margin-top: 10px;
+  }
+
+  /* ----- HERO SECTION ----- */
+  .hero {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 50px 5%;
+  }
+
+  .hero-text {
+    margin-top: 20px;
+  }
+
+  .hero h1 {
+    font-size: 1.6rem;
+  }
+
+  .hero p.desc {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+
+  .hero-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+  }
+
+  .hero-buttons .btn {
+    width: 80%;
+  }
+
+  .hero-img img {
+    width: 90%;
+    max-width: 320px;
+    animation: smoothMove 5s ease-in-out infinite;
+  }
+
+  /* ----- STATS ----- */
+  .stats {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: 25px;
+  }
+
+  .stats div {
+    text-align: center;
+  }
+
+  .stats h3 {
+    font-size: 1.5rem;
+  }
+
+  /* ----- WHY CHOOSE US ----- */
+  .reasons {
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+
+  .reasons div {
+    padding: 20px;
+  }
+
+  .reasons i {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+  }
+
+  /* ----- PRODUCTS ----- */
+  .product-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+
+  .product-card img {
+    width: 100%;
+    border-radius: 8px;
+  }
+
+  .product-card h4 {
+    font-size: 1rem;
+  }
+
+  /* ----- COLLECTIONS ----- */
+  .collection-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .collection-card {
+    padding: 20px;
+  }
+
+  /* ----- TESTIMONIALS ----- */
+  .testimonials {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .testimonial-card {
+    width: 90%;
+  }
+
+  /* ----- NEWSLETTER ----- */
+  .newsletter {
+    padding: 60px 20px;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+  }
+
+  .newsletter input[type="email"] {
+    width: 100%;
+  }
+
+  .newsletter button {
+    width: 100%;
+  }
+
+  /* ----- FOOTER ----- */
+  footer {
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .footer-column {
+    min-width: 100%;
+  }
+
+  .footer-social {
+    justify-content: center;
+  }
+
+  .footer-bottom {
+    font-size: 0.8rem;
+  }
+}
+
+/* ----- ULTRA SMALL PHONES (≤480px) ----- */
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 1.3rem;
+  }
+
+  .reasons {
+    grid-template-columns: 1fr;
+  }
+
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-img img {
+    max-width: 280px;
+  }
+}
+
