@@ -3,359 +3,47 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Purebliss | E-commerce Landing Page</title>
+  <title>Purebliss | For the Assets, Not the Chasers</title>
 
-
-  <!-- AOS Library -->
-<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
-<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-<link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
   <!-- Fonts & Icons -->
-  <link href="https://fonts.googleapis.com/css?family=Urbanist" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
-  <!-- AOS Animation Library -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+  <!-- Animation Library -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 
   <!-- Main Styles -->
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="pure.css" />
 </head>
 <body>
 
   <!-- Header -->
-  <header data-aos="fade-down">
-  <div class="logo-area">
-    <!-- <img src="images/kkl.jpg" alt="Purebliss Logo" class="logo-img" /> -->
-    <span class="logo-text">Purebliss</span>
-  </div>
-
-  <nav>
-    <a href="#Home">Home</a>
-    <a href="#Shop">Shop</a>
-    <a href="#Collections">Collections</a>
-    <a href="#Contact">Contact</a>
-  </nav>
-
-  <div class="icons">
-    <i class="fas fa-search"></i>
-    <i class="fas fa-user"></i>
-    <div class="cart-icon">
-      <i class="fas fa-shopping-cart"></i>
-      <span class="cart-badge">2</span>
+  <header>
+    <div class="logo-area">
+      <img src="images/kkl.jpg" alt="Purebliss Logo" class="logo-img">
     </div>
-  </div>
-
-  <!-- 🔽 Hamburger menu icon for mobile -->
-  <div class="menu-toggle" id="menu-toggle">
-    <i class="fas fa-bars"></i>
-  </div>
-
-  <!-- 🔽 Dropdown for mobile view icons -->
-  <div class="mobile-dropdown" id="mobile-dropdown" data-aos="fade-down">
-    <i class="fas fa-search"></i>
-    <i class="fas fa-user"></i>
-    <div class="cart-icon">
-      <i class="fas fa-shopping-cart"></i>
-      <span class="cart-badge">2</span>
-    </div>
-  </div>
-</header>
-
+  </header>
 
   <!-- Hero Section -->
- <section class="hero">
-  <div class="hero-text" data-aos="fade-right">
-    <p class="sub">Get exclusive access to the December launch</p>
+  <section class="hero" data-aos="fade-up">
+    <div class="hero-text">
+      <h4 class="sub">You Are The Price</h4>
+      <h1 class="headline">For the Assets, not the Chasers.</h1>
+      <p class="body-text">10 Second Maintenance Fix. 🏴 Launching January</p>
+      <p class="cta">Get exclusive access to the January Launch.</p>
 
-    <h1 class="metallic-text">
-      You are the Price that never<br />decreases. Whatever you do, don't dry!
-    </h1>
-
-    <p class="desc">Purebliss For The Assets Not The Chasers</p>
-    
-    <div class="hero-buttons">
-      <a href="#Shop" class="btn primary-btn">Shop Now</a>
-      <a href="#LearnMore" class="btn secondary-btn">Learn More</a>
-    </div>
-    
-    <div class="stats">
-      <div>
-        <h3 class="count" data-target="10000">10K+</h3>
-        <p>Happy Customers</p>
-      </div>
-      <div>
-        <h3 class="count" data-target="500">500+</h3>
-        <p>Products</p>
-      </div>
-      <div>
-        <h3 class="count" data-target="100">100%</h3>
-        <p>Neutral</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="hero-img" data-aos="fade-left">
-    <img src="images/pap.jpeg" alt="Purebliss Product" />
-  </div>
-</section>
-
-
-  <!-- Why Choose Us -->
-  <section class="why" data-aos="fade-up">
-    <h2>Why Choose Purebliss</h2>
-    <p>We focus on delivering premium products with a seamless shopping experience.</p>
-    <div class="reasons">
-      <div data-aos="zoom-in" data-aos-delay="100">
-        <i class="fas fa-shipping-fast"></i>
-        <h4>Fast Delivery</h4>
-        <p>Get your orders quickly and safely.</p>
-      </div>
-      <div data-aos="zoom-in" data-aos-delay="200">
-        <i class="fas fa-headset"></i>
-        <h4>24/7 Support</h4>
-        <p>We’re always here to help you.</p>
-      </div>
-      <div data-aos="zoom-in" data-aos-delay="300">
-        <i class="fas fa-gift"></i>
-        <h4>Quality Products</h4>
-        <p>Only the best for our customers.</p>
-      </div>
-      <div data-aos="zoom-in" data-aos-delay="400">
-        <i class="fas fa-lock"></i>
-        <h4>Secure Payment</h4>
-        <p>Your information is protected.</p>
-      </div>
+      <form class="email-form" action="#" method="post">
+        <input type="email" placeholder="Enter your email address" required>
+        <button type="submit" class="btn">Get on the list</button>
+      </form>
     </div>
   </section>
 
-  <!-- Product Section -->
-  <section class="products" data-aos="fade-up">
-    <h2>Best Sellers</h2>
-    <div class="product-grid">
-      <div class="product-card" data-aos="zoom-in" data-aos-delay="100">
-        <img src="public/image/kkl.jpg" alt="Product 1" />
-        <h4>Comfort Hoodie</h4>
-        <p>$35.00</p>
-      </div>
-      <div class="product-card" data-aos="zoom-in" data-aos-delay="200">
-        <img src="public/image/kkl.jpg" alt="Product 2" />
-        <h4>Pure T-Shirt</h4>
-        <p>$25.00</p>
-      </div>
-      <div class="product-card" data-aos="zoom-in" data-aos-delay="300">
-        <img src="public/image/kkl.jpg" alt="Product 3" />
-        <h4>Bliss Sneakers</h4>
-        <p>$50.00</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Collections Section -->
-  <section class="collections" data-aos="fade-up">
-    <h2>Explore Our Collections</h2>
-    <div class="collection-grid">
-      <div class="collection-card" data-aos="fade-right">
-        <h3>Men’s Fashion</h3>
-        <p>Trendy and comfortable wear for every occasion.</p>
-      </div>
-      <div class="collection-card" data-aos="fade-up">
-        <h3>Women’s Fashion</h3>
-        <p>Stylish collections that redefine elegance.</p>
-      </div>
-      <div class="collection-card" data-aos="fade-left">
-        <h3>Accessories</h3>
-        <p>Complete your look with our accessories.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Testimonials Section -->
-  <section class="section" data-aos="fade-up">
-    <h2>What Our Customers Say</h2>
-    <p class="subtitle">Join thousands of happy customers who have discovered the PureBliss difference</p>
-    <div class="testimonials">
-      <div class="testimonial-card" data-aos="fade-right">
-        <div class="stars">★★★★★</div>
-        <p class="testimonial-text">
-          "PureBliss has completely transformed my skincare routine. My skin has never looked better!"
-        </p>
-        <div class="customer-info">
-          <img src="https://via.placeholder.com/40" alt="Sarah Johnson" />
-          <div>
-            <span class="customer-name">Sarah Johnson</span>
-            <span class="verified">Verified Customer</span>
-          </div>
-        </div>
-      </div>
-      <div class="testimonial-card" data-aos="fade-up">
-        <div class="stars">★★★★★</div>
-        <p class="testimonial-text">
-          "The quality is exceptional and I love that everything is natural. Worth every penny!"
-        </p>
-        <div class="customer-info">
-          <img src="https://via.placeholder.com/40" alt="Emily Chen" />
-          <div>
-            <span class="customer-name">Emily Chen</span>
-            <span class="verified">Verified Customer</span>
-          </div>
-        </div>
-      </div>
-      <div class="testimonial-card" data-aos="fade-left">
-        <div class="stars">★★★★★</div>
-        <p class="testimonial-text">
-          "Finally found products that work for my sensitive skin. Highly recommend!"
-        </p>
-        <div class="customer-info">
-          <img src="https://via.placeholder.com/40" alt="Jessica Martinez" />
-          <div>
-            <span class="customer-name">Jessica Martinez</span>
-            <span class="verified">Verified Customer</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Newsletter Section -->
-  <section class="newsletter" data-aos="fade-up">
-    <div class="newsletter-icon">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/8/83/Facebook_Messenger_Logo_2020.svg" alt="Messenger" width="60" />
-    </div>
-    <h3>Join Our Newsletter</h3>
-    <p>Subscribe to get special offers, skincare tips, and updates on new products</p>
-
-    <form class="newsletter-form">
-      <input type="email" placeholder="Enter your email" required />
-      <button type="submit">Subscribe</button>
-    </form>
-    <small>We respect your privacy. Unsubscribe at any time.</small>
-  </section>
-
-  <!-- Footer Section -->
-  <footer data-aos="fade-up">
-    <div class="footer-container">
-      <div class="footer-column">
-        <div class="footer-logo">
-          <span></span>
-          <h4>Purebliss</h4>
-        </div>
-        <p>Premium natural skincare products for radiant, healthy skin.</p>
-        <div class="footer-social">
-          <a href="#"><i class="fas fa-globe"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
-        </div>
-      </div>
-
-      <div class="footer-column">
-        <h4 style="color: #fff;">Quick Links</h4>
-        <ul>
-          <li><a href="#">Shop All</a></li>
-          <li><a href="#">Best Sellers</a></li>
-          <li><a href="#">New Arrivals</a></li>
-          <li><a href="#">Gift Sets</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-column">
-        <h4 style="color: #fff;">Customer Service</h4>
-        <ul>
-          <li><a href="#">Contact Us</a></li>
-          <li><a href="#">Shipping Info</a></li>
-          <li><a href="#">Returns</a></li>
-          <li><a href="#">FAQ</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-column">
-        <h4 style="color: #fff;">Contact Info</h4>
-        <p>📍 123 Beauty Street, Nigeria, CA 90028</p>
-        <p>📞 +1 (555) 123-4567</p>
-        <p>📧 hello@purebliss.com</p>
-      </div>
-    </div>
-    <div class="footer-bottom">© 2025 PureBliss. All rights reserved.</div>
-  </footer>
-
-  <!-- AOS Script -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <!-- Script -->
   <script>
-    AOS.init({
-      duration: 1000,
-      once: true,
-      offset: 100,
-    });
+    AOS.init({ duration: 1000, once: true });
   </script>
-
-
-
-<script>
-  const counters = document.querySelectorAll('.count');
-  let started = false;
-
-  function countUp() {
-    counters.forEach(counter => {
-      const target = +counter.getAttribute('data-target');
-      let count = 0;
-      const duration = 2000; // total animation time (2s)
-      const stepTime = 20;   // update every 20ms
-      const increment = target / (duration / stepTime);
-
-      const updateCount = () => {
-        count += increment;
-        if (count < target) {
-          counter.innerText = Math.floor(count);
-          setTimeout(updateCount, stepTime);
-        } else {
-          // Format numbers and add symbols
-          if (target === 10000) counter.innerText = "10K+";
-          else if (target === 500) counter.innerText = "500+";
-          else if (target === 100) counter.innerText = "100%";
-        }
-      };
-      updateCount();
-    });
-  }
-
-  // Trigger when visible
-  window.addEventListener('scroll', () => {
-    const statsSection = document.querySelector('.stats');
-    const statsPosition = statsSection.getBoundingClientRect().top;
-    const screenPosition = window.innerHeight / 1.2;
-
-    if (statsPosition < screenPosition && !started) {
-      countUp();
-      started = true;
-    }
-  });
-</script>
-
-
-
-
-<script>
-  AOS.init({
-    duration: 1200,
-    once: false
-  });
-</script>
-
-
-
-<script>
-  const menuToggle = document.getElementById("menu-toggle");
-  const mobileDropdown = document.getElementById("mobile-dropdown");
-
-  menuToggle.addEventListener("click", () => {
-    mobileDropdown.classList.toggle("show");
-    const icon = menuToggle.querySelector("i");
-    icon.classList.toggle("fa-bars");
-    icon.classList.toggle("fa-xmark");
-  });
-</script>
-
-
-
 </body>
 </html>
